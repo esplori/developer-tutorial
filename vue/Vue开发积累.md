@@ -1,14 +1,3 @@
----
-title: 01-数据库的基础知识
-publish: false
----
-
-<ArticleTopAd></ArticleTopAd>
-
-
-
-
-
 
 ### 动态添加对象的属性
 
@@ -50,6 +39,35 @@ publish: false
 
 - [问Vue.js 如何在 data 里含数组的情况下，监听数组内指定属性的变化？](https://segmentfault.com/q/1010000014514160/a-1020000014514452)
 
+
+
+
+### scoped 关键字的作用
+
+在 `xx.vue` 组件中，我们可能会遇到带 `scoped` 关键字的样式。比如：
+
+```html
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+</style>
+```
+
+
+上方的`scoped`表示的是**作用域化**，样式只对当前子组件生效。
 
 
 
